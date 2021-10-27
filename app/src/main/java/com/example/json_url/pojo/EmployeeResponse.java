@@ -10,11 +10,12 @@ public class EmployeeResponse {
     @Expose
     private List<Emploee> response = null;
 
-    public List<Emploee> getResponse() {
+    public List<Emploee> getEmploees() {
         return response;
     }
 
-    public void setResponse(List<Emploee> response) {
+    public void setResponse(List<Emploee> response)
+    {
         this.response = response;
     }
 }

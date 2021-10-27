@@ -1,14 +1,20 @@
 package com.example.json_url.pojo;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+import androidx.room.TypeConverters;
+
+import com.example.json_url.converter.Converter;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+
 import java.util.List;
 
-import retrofit2.Converter;
-
-
+@Entity(tableName = "emploee")
+@TypeConverters(value = Converter.class)
 public class Emploee {
+    @PrimaryKey(autoGenerate = true)
     private int id;
     @SerializedName("f_name")
     @Expose

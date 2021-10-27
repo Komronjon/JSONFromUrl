@@ -10,7 +10,7 @@ public class EmployeeResponse {
     @Expose
     private List<Emploee> response = null;
 
-    public List<Emploee> getEmployees() {
+    public List<Emploee> getResponse() {
         return response;
     }
 
